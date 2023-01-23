@@ -1,0 +1,14 @@
+{
+  "name": "fetchjson",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/clasp": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.57"
+  }
+}
