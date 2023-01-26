@@ -1,5 +1,5 @@
 function Send(messageParams, emailParams, mock = false) {
-  const htmlTemplate = getHtmlTemplate();
+  const { htmlTemplate } = emailParams;
   const htmlMessage = getHtmlMessage(messageParams, htmlTemplate);
   const emailBody = {
     to: emailParams.destination,
