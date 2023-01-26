@@ -1,4 +1,4 @@
-function EmailSender(messageParams, emailParams, mock = false) {
+function Send(messageParams, emailParams, mock = false) {
   const htmlTemplate = getHtmlTemplate();
   const htmlMessage = getHtmlMessage(messageParams, htmlTemplate);
   const emailBody = {
