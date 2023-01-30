@@ -14,6 +14,7 @@ function integrationTest() {
     source: "Equipe",
     origin: "consulta@equipe.com.br",
     destination: messageParams.email,
+    bcc:  "consulta@equipe.com.br",
     subjectLine: `Orientações de pagamento # ${messageParams.paymentId.replace(/[\D]*/gim, "")}`,
     htmlTemplate: HtmlService.createTemplateFromFile(fileName).evaluate().getContent(),
   };

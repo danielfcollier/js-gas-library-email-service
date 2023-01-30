@@ -3,7 +3,7 @@ function Send(messageParams, emailParams, mock = false) {
   const htmlMessage = getHtmlMessage(messageParams, htmlTemplate);
   const emailBody = {
     to: emailParams.destination,
-    bcc: emailParams.origin,
+    bcc: emailParams.bcc,
     subject: emailParams.subjectLine,
     htmlBody: htmlMessage,
     name: emailParams.source,

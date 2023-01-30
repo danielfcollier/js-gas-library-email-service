@@ -64,6 +64,7 @@ const messageParams = {
 const emailParams = {
   source: "Equipe",
   origin: "consulta@equipe.com.br",
+  bcc:  "consulta@equipe.com.br",
   destination: messageParams.email,
   subjectLine: `Orientações de pagamento # ${messageParams.paymentId.replace(/[\D]*/gim, "")}`,
   card: getImageCardBlob(),
