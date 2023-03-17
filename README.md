@@ -71,7 +71,7 @@ const emailParams = {
   htmlTemplate: HtmlService.createTemplateFromFile(fileName).evaluate().getContent(),
 };
 
-Send(messageParams, emailParams);
+EmailService.Send(messageParams, emailParams);
 ```
 
 ```javascript
